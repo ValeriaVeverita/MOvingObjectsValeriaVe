@@ -81,17 +81,3 @@ end
 Runtime:addEventListener("enterFrame", MoveOctopus)
 
 -- create a new object 
-=======
-if beetleship.x == 90 then
- local function MoveOctopus( event)
-	  -- add the scroll speed to the x-value and y-value of the octopus
-     octopus.x = octopus.x + scrollSpeed
-      octopus.y = octopus.y + scrollSpeed
-      -- add opacity to the object
-      octopus.alpha = octopus.alpha + 0.01
- end
-   --MoveOctopus will be called over and over again
-  Runtime:addEventListener("enterFrame", MoveOctopus)
-end
-
->>>>>>> a47f18127b2f23786b22e10ae7514741a0a9f880
