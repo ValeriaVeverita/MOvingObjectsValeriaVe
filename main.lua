@@ -40,15 +40,25 @@ end
 -- MoveShip will be called over and over again
 Runtime:addEventListener("enterFrame", MoveShip)
 
+<<<<<<< HEAD
 
 local octopus = display.newImageRect("Images/octopus.png", 200, 200)
 
 local scrollSpeed2 = 4
+=======
+-- character image with width and height
+local octopus = display.newImageRect("Images/octopus.png", 200, 200)
+
+
+>>>>>>> a47f18127b2f23786b22e10ae7514741a0a9f880
 
 -- set the initial x and y position of the octopus
 octopus.x = 0
 octopus.y = 0
+<<<<<<< HEAD
 octopus.alpha = 0
+=======
+>>>>>>> a47f18127b2f23786b22e10ae7514741a0a9f880
 
 --Funnction: MoveOctopus
 --Input
@@ -56,6 +66,7 @@ octopus.alpha = 0
 --Description: This function adda the scrool
 --Condition: AppearOctopus
 --Description: when beetleship dissapear, then make the octopus appear
+<<<<<<< HEAD
 local function MoveOctopus( event )
 
   if (beetleship.x >= 1200) then
@@ -70,3 +81,17 @@ end
 Runtime:addEventListener("enterFrame", MoveOctopus)
 
 -- create a new object 
+=======
+if beetleship.x == 90 then
+ local function MoveOctopus( event)
+	  -- add the scroll speed to the x-value and y-value of the octopus
+     octopus.x = octopus.x + scrollSpeed
+      octopus.y = octopus.y + scrollSpeed
+      -- add opacity to the object
+      octopus.alpha = octopus.alpha + 0.01
+ end
+   --MoveOctopus will be called over and over again
+  Runtime:addEventListener("enterFrame", MoveOctopus)
+end
+
+>>>>>>> a47f18127b2f23786b22e10ae7514741a0a9f880
